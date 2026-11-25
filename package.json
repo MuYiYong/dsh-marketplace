@@ -1,0 +1,15 @@
+{
+  "name": "dsh-marketplace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DSH plugin market index for MuYiYong's plugins.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node scripts/validate-index.mjs",
+    "test": "node --test test/*.test.mjs",
+    "add-release": "node scripts/add-release.mjs"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "format": 1,
+  "title": {
+    "en": "MuYi's DSH Plugins",
+    "zh": "MuYi 的 DSH 插件"
+  },
+  "description": {
+    "en": "Plugin index for MuYiYong's DSH plugins. Add this index in the Plugins → Discover page.",
+    "zh": "MuYiYong 的 DSH 插件索引。在「插件 → 发现」中添加索引源即可浏览与安装。"
+  },
+  "metadata": {
+    "categories": {
+      "monitoring": {
+        "title": {
+          "en": "Monitoring",
+          "zh": "监控"
+        }
+      },
+      "developer-tools": {
+        "title": {
+          "en": "Developer tools",
+          "zh": "开发者工具"
+        }
+      }
+    },
+    "labels": {
+      "codex": {
+        "title": {
+          "en": "Codex",
+          "zh": "Codex"
+        }
+      },
+      "tmux": {
+        "title": {
+          "en": "tmux",
+          "zh": "tmux"
+        }
+      },
+      "ssh": {
+        "title": {
+          "en": "SSH",
+          "zh": "SSH"
+        }
+      },
+      "macos": {
+        "title": {
+          "en": "macOS",
+          "zh": "macOS"
+        }
+      },
+      "iterm2": {
+        "title": {
+          "en": "iTerm2",
+          "zh": "iTerm2"
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-codex-agent",
+      "title": {
+        "en": "Codex Agent",
+        "zh": "Codex Agent"
+      },
+      "description": {
+        "en": "Monitor remote Codex CLI sessions in a DSH sidebar panel: automatic tmux discovery, live status, a sidebar update hint, and an interactive iTerm2 view.",
+        "zh": "在 DSH 侧栏监控远端 Codex CLI 会话：自动定位 tmux 窗格、实时状态、侧栏更新提示，以及可交互的 iTerm2 查看。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkNvZGV4IEFnZW50Ij4KICA8cmVjdCB4PSI0IiB5PSI0IiB3aWR0aD0iNTYiIGhlaWdodD0iNTYiIHJ4PSIxNCIgZmlsbD0iIzFjMjIzMCIvPgogIDxyZWN0IHg9IjQuNzUiIHk9IjQuNzUiIHdpZHRoPSI1NC41IiBoZWlnaHQ9IjU0LjUiIHJ4PSIxMy4yNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM2Q2ZGUwIiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDxwYXRoIGQ9Ik0xNiAyMWgxMyIgc3Ryb2tlPSIjN2FhMmZmIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTE2IDMyaDkiIHN0cm9rZT0iIzdhYTJmZiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC43MiIvPgogIDxwYXRoIGQ9Ik0xNiA0M2g3IiBzdHJva2U9IiM3YWEyZmYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNDYiLz4KICA8cGF0aCBkPSJNMzUgMjBsMTAgMTItMTAgMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2U4ZWNmNSIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDxjaXJjbGUgY3g9IjUxIiBjeT0iMTUiIHI9IjQuNSIgZmlsbD0iIzNmYmY3MiIgc3Ryb2tlPSIjMWMyMjMwIiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDxjaXJjbGUgY3g9IjUxIiBjeT0iNDkiIHI9IjMuNSIgZmlsbD0iI2UyYTYzZCIgc3Ryb2tlPSIjMWMyMjMwIiBzdHJva2Utd2lkdGg9IjEuNSIvPgo8L3N2Zz4K",
+      "author": "MuYiYong",
+      "homepage": "https://github.com/MuYiYong/dsh-remote-codex-monitor",
+      "repository": {
+        "url": "https://github.com/MuYiYong/dsh-remote-codex-monitor"
+      },
+      "metadata": {
+        "category": "monitoring",
+        "keywords": [
+          "codex",
+          "tmux",
+          "ssh",
+          "remote",
+          "monitor",
+          "iterm2",
+          "sidebar"
+        ],
+        "labels": [
+          "codex",
+          "tmux",
+          "ssh",
+          "macos",
+          "iterm2"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1795584976,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/MuYiYong/dsh-remote-codex-monitor",
+            "commit": "30f38f4b5edd8de4771e0cc61fe017908e80db7c"
+          },
+          "engines": {
+            "dsh": "^0.2.2-rc.5"
+          }
+        }
+      ]
+    }
+  ]
+}
