@@ -58,7 +58,7 @@
   },
   "plugins": [
     {
-      "name": "dsh-codex-agent",
+      "name": "dsh-remote-codex-agent",
       "title": {
         "en": "Codex Agent",
         "zh": "Codex Agent"
@@ -69,9 +69,9 @@
       },
       "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkNvZGV4IEFnZW50Ij4KICA8cmVjdCB4PSI0IiB5PSI0IiB3aWR0aD0iNTYiIGhlaWdodD0iNTYiIHJ4PSIxNCIgZmlsbD0iIzFjMjIzMCIvPgogIDxyZWN0IHg9IjQuNzUiIHk9IjQuNzUiIHdpZHRoPSI1NC41IiBoZWlnaHQ9IjU0LjUiIHJ4PSIxMy4yNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM2Q2ZGUwIiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDxwYXRoIGQ9Ik0xNiAyMWgxMyIgc3Ryb2tlPSIjN2FhMmZmIiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTE2IDMyaDkiIHN0cm9rZT0iIzdhYTJmZiIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC43MiIvPgogIDxwYXRoIGQ9Ik0xNiA0M2g3IiBzdHJva2U9IiM3YWEyZmYiIHN0cm9rZS13aWR0aD0iMy41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNDYiLz4KICA8cGF0aCBkPSJNMzUgMjBsMTAgMTItMTAgMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2U4ZWNmNSIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDxjaXJjbGUgY3g9IjUxIiBjeT0iMTUiIHI9IjQuNSIgZmlsbD0iIzNmYmY3MiIgc3Ryb2tlPSIjMWMyMjMwIiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDxjaXJjbGUgY3g9IjUxIiBjeT0iNDkiIHI9IjMuNSIgZmlsbD0iI2UyYTYzZCIgc3Ryb2tlPSIjMWMyMjMwIiBzdHJva2Utd2lkdGg9IjEuNSIvPgo8L3N2Zz4K",
       "author": "MuYiYong",
-      "homepage": "https://github.com/MuYiYong/dsh-remote-codex-monitor",
+      "homepage": "https://github.com/MuYiYong/dsh-remote-codex-agent",
       "repository": {
-        "url": "https://github.com/MuYiYong/dsh-remote-codex-monitor"
+        "url": "https://github.com/MuYiYong/dsh-remote-codex-agent"
       },
       "metadata": {
         "category": "monitoring",
@@ -94,24 +94,12 @@
       },
       "versions": [
         {
-          "version": "0.1.1",
-          "publishTimestamp": 1795587784,
+          "version": "0.2.0",
+          "publishTimestamp": 1795588827,
           "source": {
             "type": "git",
-            "url": "https://github.com/MuYiYong/dsh-remote-codex-monitor",
-            "commit": "6e248e4585130e0979aeb793cab0f19d6f3eb9be"
-          },
-          "engines": {
-            "dsh": "^0.2.2-rc.5"
-          }
-        },
-        {
-          "version": "0.1.0",
-          "publishTimestamp": 1795584976,
-          "source": {
-            "type": "git",
-            "url": "https://github.com/MuYiYong/dsh-remote-codex-monitor",
-            "commit": "d99d2cc79e1678e6f5824431629d2b70bab93d2c"
+            "url": "https://github.com/MuYiYong/dsh-remote-codex-agent",
+            "commit": "1f38114b7e2c5759af7ae1929f90d35ea3ad323d"
           },
           "engines": {
             "dsh": "^0.2.2-rc.5"

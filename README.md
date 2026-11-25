@@ -21,7 +21,7 @@ https://raw.githubusercontent.com/MuYiYong/dsh-marketplace/main/index.json
 
 | 插件 | 包名 | 源码仓库 | 说明 |
 |------|------|----------|------|
-| Codex Agent | `dsh-codex-agent` | [dsh-remote-codex-monitor](https://github.com/MuYiYong/dsh-remote-codex-monitor) | 在侧栏监控远端 Codex CLI 会话，定位 tmux 窗格、显示实时状态，并可在 iTerm2 中打开会话。 |
+| Codex Agent | `dsh-remote-codex-agent` | [dsh-remote-codex-agent](https://github.com/MuYiYong/dsh-remote-codex-agent) | 在侧栏监控远端 Codex CLI 会话，定位 tmux 窗格、显示实时状态，并可在 iTerm2 中打开会话。 |
 
 ## 仓库结构
 
@@ -77,13 +77,13 @@ git rev-parse HEAD   # 记录 40 位 commit
 
 # 2. 本仓库：记录版本并校验
 node scripts/add-release.mjs \
-  --name dsh-codex-agent \
+  --name dsh-remote-codex-agent \
   --version 0.2.0 \
   --commit <完整 40 位 commit>
 
 npm test
 git add index.json
-git commit -m "release: dsh-codex-agent 0.2.0"
+git commit -m "release: dsh-remote-codex-agent 0.2.0"
 git push
 ```
 
