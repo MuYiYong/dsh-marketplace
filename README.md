@@ -22,6 +22,7 @@ https://raw.githubusercontent.com/MuYiYong/dsh-marketplace/main/index.json
 | 插件 | 包名 | 源码仓库 | 说明 |
 |------|------|----------|------|
 | Codex Agent | `dsh-remote-codex-agent` | [dsh-remote-codex-agent](https://github.com/MuYiYong/dsh-remote-codex-agent) | 在侧栏监控远端 Codex CLI 会话，定位 tmux 窗格、显示实时状态，并可在 iTerm2 中打开会话。 |
+| 悦数图数据库（NebulaGraph 5.x） | `dsh-nebula-mcp` | [nebula-mcp](https://github.com/MuYiYong/nebula-mcp#deepseek-harness) | [另装 Python 运行时](https://github.com/MuYiYong/nebula-mcp/blob/main/docs/configuration.md#dsh-runtime)后，在 **设置 → Agent 预设** 正下方的 **悦数图数据库** 管理当前配置档的只读 MCP 连接。不支持开源 NebulaGraph 3.x。 |
 
 ## 仓库结构
 

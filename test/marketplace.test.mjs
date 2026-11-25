@@ -19,7 +19,7 @@ function validIndex() {
       sortKeys: { recommended: { title: { en: 'Recommended', zh: '推荐' }, order: 'desc' } },
     },
     plugins: [{
-      name: 'dsh-codex-agent',
+      name: 'dsh-remote-codex-agent',
       title: { en: 'Codex Agent', zh: 'Codex Agent' },
       description: { en: 'Remote Codex sessions', zh: '远端 Codex 会话' },
       icon: 'icons/plugin.svg',
@@ -63,7 +63,7 @@ test('rejects malformed roots, names, metadata and versions', () => {
 
   const duplicate = validIndex()
   duplicate.plugins.push(structuredClone(duplicate.plugins[0]))
-  invalid(duplicate, /\$\.plugins\[1\]\.name duplicates dsh-codex-agent/)
+  invalid(duplicate, /\$\.plugins\[1\]\.name duplicates dsh-remote-codex-agent/)
 
   const duplicateVersion = validIndex()
   duplicateVersion.plugins[0].versions.push(structuredClone(duplicateVersion.plugins[0].versions[0]))
@@ -147,7 +147,7 @@ test('compares SemVer precedence, including prereleases', () => {
 test('addRelease records a newer version, sorts it first and inherits engines', () => {
   const document = validIndex()
   const result = addRelease(document, {
-    name: 'dsh-codex-agent', version: '0.2.0', commit: COMMIT_B, timestamp: 1_760_000_100,
+    name: 'dsh-remote-codex-agent', version: '0.2.0', commit: COMMIT_B, timestamp: 1_760_000_100,
   }, options)
   assert.equal(result.created, false)
   assert.equal(result.unchanged, false)
@@ -162,15 +162,15 @@ test('addRelease records a newer version, sorts it first and inherits engines', 
 
 test('addRelease is idempotent for the same commit and rejects silent replacement', () => {
   const result = addRelease(validIndex(), {
-    name: 'dsh-codex-agent', version: '0.1.0', commit: COMMIT_A,
+    name: 'dsh-remote-codex-agent', version: '0.1.0', commit: COMMIT_A,
   }, options)
   assert.equal(result.unchanged, true)
   assert.throws(() => addRelease(validIndex(), {
-    name: 'dsh-codex-agent', version: '0.1.0', commit: COMMIT_B,
+    name: 'dsh-remote-codex-agent', version: '0.1.0', commit: COMMIT_B,
   }, options), /already recorded with a different commit/)
 
   assert.throws(() => addRelease(validIndex(), {
-    name: 'dsh-codex-agent', version: '0.1.0', commit: COMMIT_A, enginesDsh: 'not a range',
+    name: 'dsh-remote-codex-agent', version: '0.1.0', commit: COMMIT_A, enginesDsh: 'not a range',
   }, options), /must be a SemVer range/)
 })
 
