@@ -94,6 +94,18 @@
       },
       "versions": [
         {
+          "version": "0.1.1",
+          "publishTimestamp": 1795587784,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/MuYiYong/dsh-remote-codex-monitor",
+            "commit": "6e248e4585130e0979aeb793cab0f19d6f3eb9be"
+          },
+          "engines": {
+            "dsh": "^0.2.2-rc.5"
+          }
+        },
+        {
           "version": "0.1.0",
           "publishTimestamp": 1795584976,
           "source": {
