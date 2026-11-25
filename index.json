@@ -99,7 +99,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/MuYiYong/dsh-remote-codex-monitor",
-            "commit": "3fafe2960551b0c9c8aa75bcf1effbd7b8a9d7b5"
+            "commit": "d99d2cc79e1678e6f5824431629d2b70bab93d2c"
           },
           "engines": {
             "dsh": "^0.2.2-rc.5"
