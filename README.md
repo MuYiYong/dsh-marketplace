@@ -8,6 +8,8 @@ MuYiYong 的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)
 https://raw.githubusercontent.com/MuYiYong/dsh-marketplace/main/index.json
 ```
 
+> 索引源必须填 **索引文件本身的 URL**（以 `.json` 结尾的 raw 地址），不能填仓库网页地址 `https://github.com/MuYiYong/dsh-marketplace`。填仓库页面会得到 `$.format must be 1` 之类的解析错误。
+
 ## 在 DSH 中使用
 
 1. 打开 **插件** 页，进入 **发现** 标签。
