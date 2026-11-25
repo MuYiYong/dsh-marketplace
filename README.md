@@ -22,7 +22,17 @@ https://raw.githubusercontent.com/MuYiYong/dsh-marketplace/main/index.json
 | 插件 | 包名 | 源码仓库 | 说明 |
 |------|------|----------|------|
 | Codex Agent | `dsh-remote-codex-agent` | [dsh-remote-codex-agent](https://github.com/MuYiYong/dsh-remote-codex-agent) | 在侧栏监控远端 Codex CLI 会话，定位 tmux 窗格、显示实时状态，并可在 iTerm2 中打开会话。 |
-| 悦数图数据库（NebulaGraph 5.x） | `dsh-nebula-mcp` | [nebula-mcp](https://github.com/MuYiYong/nebula-mcp#deepseek-harness) | [另装 Python 运行时](https://github.com/MuYiYong/nebula-mcp/blob/main/docs/configuration.md#dsh-runtime)后，在 **设置 → Agent 预设** 正下方的 **悦数图数据库** 管理当前配置档的只读 MCP 连接。不支持开源 NebulaGraph 3.x。 |
+| NebulaGraph（悦数图数据库 5.x） | `dsh-nebula-mcp` | [nebula-mcp](https://github.com/MuYiYong/nebula-mcp#deepseek-harness) | 首次使用自动准备便携 Python 运行时；安装后在 **设置 → Agent 预设** 正下方的 **NebulaGraph** 管理当前配置档的只读 MCP 连接。不支持开源 NebulaGraph 3.x。 |
+
+### 与 Codex marketplace 共用插件仓库
+
+同一个插件仓库可以同时被本索引和 [MuYiYong/codex-marketplace](https://github.com/MuYiYong/codex-marketplace) 收录，插件代码只维护一份：
+
+- DSH 侧：仓库根目录（或 `--path` 指定的目录）提供 `package.json`、`cordis.patch.yml`、`locale/`、`icon.svg`，由 `index.json` 固定完整 commit。
+- Codex 侧：仓库中的 `plugins/<name>/` 提供 `.codex-plugin/plugin.json` 和 `.mcp.json`，由 `codex-marketplace` 的 `.agents/plugins/marketplace.json` 通过 `git-subdir` 固定完整 commit。
+- 两个市场各自固定 commit，可以独立发布和回滚；插件仓库升级时分别更新两边的索引记录。
+
+`nebula-mcp` 是当前的样板：DSH 使用 `plugins/nebula-dsh`，Codex 使用 `plugins/nebula-mcp`，两端共用插件仓库准备的受管运行时。
 
 ## 仓库结构
 
