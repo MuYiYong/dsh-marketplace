@@ -110,12 +110,12 @@
     {
       "name": "dsh-nebula-mcp",
       "title": {
-        "en": "YueShu Graph Database (NebulaGraph 5.x)",
-        "zh": "悦数图数据库（NebulaGraph 5.x）"
+        "en": "NebulaGraph",
+        "zh": "NebulaGraph"
       },
       "description": {
-        "en": "Read-only MCP for YueShu Graph Database (NebulaGraph 5.x), not the open-source 3.x line. Requires the separate nebula-mcp runtime; configure it below Agent Presets in Settings.",
-        "zh": "用于悦数图数据库（NebulaGraph 5.x）的只读 MCP，不支持开源 3.x。需另装 nebula-mcp 运行时，在设置的「Agent 预设」正下方配置连接。"
+        "en": "Read-only MCP for YueShu 5.3 / NebulaGraph 5.x, not the open-source 3.x line. Its portable Python runtime is prepared automatically on first use - no separate Python or runtime installation. Configure connections under Settings -> NebulaGraph.",
+        "zh": "用于悦数图数据库 5.3（NebulaGraph 5.x）的只读 MCP，不支持开源 3.x。首次使用自动准备便携 Python 运行时，无需另装 Python 或运行时；在设置 -> NebulaGraph 配置连接。"
       },
       "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgdmlld0JveD0iMCAwIDM2IDM2Ij4KICA8cmVjdCB4PSIzIiB5PSIzIiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHJ4PSI4IiBmaWxsPSIjMTY0QzQ4Ii8+CiAgPHBhdGggZD0ibTExIDIxIDctMTAgOCAxMi0xNS0yWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOTVFMkNDIiBzdHJva2Utd2lkdGg9IjEuOCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDxjaXJjbGUgY3g9IjE4IiBjeT0iMTEiIHI9IjIuOSIgZmlsbD0iI0UxRkNGMiIvPgogIDxjaXJjbGUgY3g9IjExIiBjeT0iMjEiIHI9IjIuOSIgZmlsbD0iI0UxRkNGMiIvPgogIDxjaXJjbGUgY3g9IjI2IiBjeT0iMjMiIHI9IjIuOSIgZmlsbD0iI0UxRkNGMiIvPgo8L3N2Zz4K",
       "author": "MuYiYong",
@@ -135,12 +135,12 @@
       },
       "versions": [
         {
-          "version": "0.1.0",
-          "publishTimestamp": 1795588883,
+          "version": "0.1.11",
+          "publishTimestamp": 1795607392,
           "source": {
             "type": "git",
             "url": "https://github.com/MuYiYong/nebula-mcp",
-            "commit": "ac8a03f1aa52f43b56d5f59c084ecbbe8698b325",
+            "commit": "b6022b4a4270e16ea11a3ce37db3a7be0129f190",
             "path": "plugins/nebula-dsh"
           },
           "engines": {
