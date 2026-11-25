@@ -106,6 +106,48 @@
           }
         }
       ]
+    },
+    {
+      "name": "dsh-nebula-mcp",
+      "title": {
+        "en": "YueShu Graph Database (NebulaGraph 5.x)",
+        "zh": "悦数图数据库（NebulaGraph 5.x）"
+      },
+      "description": {
+        "en": "Read-only MCP for YueShu Graph Database (NebulaGraph 5.x), not the open-source 3.x line. Requires the separate nebula-mcp runtime; configure it below Agent Presets in Settings.",
+        "zh": "用于悦数图数据库（NebulaGraph 5.x）的只读 MCP，不支持开源 3.x。需另装 nebula-mcp 运行时，在设置的「Agent 预设」正下方配置连接。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgdmlld0JveD0iMCAwIDM2IDM2Ij4KICA8cmVjdCB4PSIzIiB5PSIzIiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHJ4PSI4IiBmaWxsPSIjMTY0QzQ4Ii8+CiAgPHBhdGggZD0ibTExIDIxIDctMTAgOCAxMi0xNS0yWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOTVFMkNDIiBzdHJva2Utd2lkdGg9IjEuOCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDxjaXJjbGUgY3g9IjE4IiBjeT0iMTEiIHI9IjIuOSIgZmlsbD0iI0UxRkNGMiIvPgogIDxjaXJjbGUgY3g9IjExIiBjeT0iMjEiIHI9IjIuOSIgZmlsbD0iI0UxRkNGMiIvPgogIDxjaXJjbGUgY3g9IjI2IiBjeT0iMjMiIHI9IjIuOSIgZmlsbD0iI0UxRkNGMiIvPgo8L3N2Zz4K",
+      "author": "MuYiYong",
+      "homepage": "https://github.com/MuYiYong/nebula-mcp#deepseek-harness",
+      "metadata": {
+        "category": "developer-tools",
+        "keywords": [
+          "nebula",
+          "nebulagraph",
+          "yueshu",
+          "graph",
+          "mcp",
+          "悦数图数据库"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1795588883,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/MuYiYong/nebula-mcp",
+            "commit": "ac8a03f1aa52f43b56d5f59c084ecbbe8698b325",
+            "path": "plugins/nebula-dsh"
+          },
+          "engines": {
+            "dsh": "^0.2.2-rc.5"
+          }
+        }
+      ]
     }
   ]
 }
